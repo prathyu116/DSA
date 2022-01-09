@@ -1,0 +1,13 @@
+
+ function maxProfit(arr) {
+  var maxPro = 0;
+  var minPrice = 999999999999999999999999;
+  for (var i = 0; i < 5; i++) {
+    minPrice = Math.min(minPrice, arr[i]);
+    maxPro = Math.max(maxPro, arr[i] - minPrice);
+  }
+  console.log(maxPro)
+}
+
+ var prices = [7,6,4,3,1]
+maxProfit(prices)
